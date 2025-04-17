@@ -1,10 +1,15 @@
-<% content_for :title, "New user" %>
 
-<h1>New user</h1>
+<% content_for :title, "New User" %>
 
-<%= render "form", user: @user %>
+<div class="card">
+  <div class="card-header"><i class="bi bi-pencil-square"></i> New User</div>
+  <div class="card-body">
+    <div class="card-group" id="user">
+      <%= render "form", user: @user %>
+    </div>
 
-<br>
+  </div>
+</div>
 
 <div>
   <%= link_to "Back to users", users_path %>
